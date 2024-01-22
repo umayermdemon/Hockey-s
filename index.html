@@ -8,6 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/fc318bfbfd.js" crossorigin="anonymous"></script>
   <!-- manrope font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +21,9 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'btn-color': '#FF4240',
+            'primary-color': '#131318',
+            'secondary-color': '#13131299',
           }
         }
       }
@@ -33,10 +38,46 @@
 
 </head>
 <body class="font-manrope">
-  <header>
-
+  <header class="max-w-7xl mx-auto">
+    <!-- navbar start -->
+    <div>
+      <div class="navbar bg-base-100 mt-3 lg:mt-6">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost  lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+              
+            </ul>
+          </div>
+          <a class=" text-2xl lg:text-4xl text-primary-color font-extrabold">Hockey<span class="text-btn-color">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-[#424247] text-lg">
+              <li class="text-btn-color font-bold"><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</i></a></li>
+          </ul>
+        </div>
+        
+        <div class="navbar-end">
+          <i class="fa-solid fa-magnifying-glass mr-6 hidden lg:block"></i>
+          <a class="btn bg-btn-color text-white">Get Ticket</a>
+        </div>
+      </div>
+    </div>
   </header>
-
+  <div>
+    
+  </div>
   <main>
 
   </main>
